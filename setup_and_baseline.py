@@ -108,3 +108,9 @@ def setup_and_baseline(train_images, train_labels, test_images, test_labels):
     print('RBF SVM:')
     print(f'Train accuracy: {rbf_train_acc:.4f}')
     print(f'Test accuracy: {rbf_test_acc:.4f}')
+
+
+if __name__ == '__main__':
+    cifar_folder_path = Path(r"C:\Users\ozgra\PycharmProjects\Foundations_of_DL\cifar-10-batches-py")
+    # Part 1 - Setup and Baseline
+    setup_and_baseline(*get_data(cifar_folder_path))
